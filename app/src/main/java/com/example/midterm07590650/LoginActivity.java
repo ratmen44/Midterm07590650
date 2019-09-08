@@ -40,12 +40,12 @@ public class LoginActivity extends AppCompatActivity {
                 if (inputUsername.equals("aaa")&&inputPassword.equals("111")) {
                     Toast.makeText(LoginActivity.this, success, Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, Profile2Activity.class);
-                    intent.putExtra("username", auth.getmUsername());
+                    intent.putExtra("username", inputUsername);
                     startActivity(intent);
                 } else if (inputUsername.equals("bbb")&&inputPassword.equals("222")) {
                     Toast.makeText(LoginActivity.this, success, Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, Profile2Activity.class);
-                    intent.putExtra("username", auth.getmUsername());
+                    intent.putExtra("username", inputUsername);
                     startActivity(intent);
                 } else {
                     AlertDialog.Builder dialog = new AlertDialog.Builder(LoginActivity.this);
